@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="assets/img/favicon_yard_sale.svg">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>ScS-061023: Login</title>
+</head>
+<body>
+	<main>
+		<!--    LOGIN    -->
+		<section id="login">
+			<form>
+				<label>Email address <input type="email" name="email" id="email" placeholder="micorreo@gmail.com"></label>
+				<label>Password <input type="password" name="password" id="password" placeholder="*********"></label>
+				<button class="primaryButton" onclick="cargarContenido('dash')">Log in</button>
+				<a href="#" onclick="cargarContenido(forgotPassword)">Forgot my password</a>
+				<button class="secundaryButton" onclick="cargarContenido('register')">Sign up</button>
+			</form>
+		</section>
+		<!-- FIN LOGIN -->
+
+		<!--    REGISTER    -->
+		<section id="register">
+			<form>
+				<label>Name <input type="text" name="name" id="name" placeholder="Name"></label>
+				<label>Email address <input type="email" name="email" id="email" placeholder="micorreo@gmail.com"></label>
+				<label>Password <input type="password" name="password" id="password" placeholder="*********"></label>
+				<button class="primaryButton" onclick="cargarContenido('login')">Create</button>
+			</form>
+		</section>
+		<!-- FIN REGISTER -->
+
+		<!--    DASH    -->
+		<section id="dash">
+			<header>
+				<ul>
+					<img src="assets/img/logo_yard_sale.svg">
+					<li>All</li>
+					<li>Clothes</li>
+					<li>Electronics</li>
+					<li>Furniture</li>
+					<li>Toys</li>
+					<li>Others</li>
+					<ol>
+						<li><a href="#">Sign in</a></li>
+						<img src="assets/icons/icon_shopping_cart_notification.svg" alt="">
+					</ol>
+				</ul>
+
+			</header>
+			<div class="grid-container">
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+				<article id="bike" class="grid-item"></article>
+			</div>
+		</section>
+		<!-- FIN DASH -->
+	</main>
+
+
+	<script type="text/javascript">
+		function generarContenido() {
+		  var articles = document.querySelectorAll("article");
+
+		  articles.forEach(function(article) {
+		    article.innerHTML = `
+		      <img src="assets/img/products/bike.jpeg" width="100%">
+		      <div>
+		        <p>$ 35,00</p>
+		        <img src="assets/icons/bt_add_to_cart.svg" class="icono">
+		      </div>
+		      <div>
+		        <p>Bicicle black</p>
+		      </div>
+		    `;
+		  });
+		}
+
+		window.onload = function() {
+		  generarContenido();
+		};
+
+	/*	function cargarContenido() {
+			var section =
+			document.getElementById(sectionId);
+			section.scrollIntoView({
+				behavior: "smooth"
+			});
+		}
+
+		*
+		function componenteProducto() {
+		    document.getElementById("bike").innerHTML = `
+		        <img src="assets/img/products/bike.jpeg" width="100%">
+		        <div>
+		            <p>$ 35,00</p>
+		            <img src="assets/icons/bt_add_to_cart.svg" class="icono">
+		        </div>
+		        <div>
+		        	<p>Bicicle black</p>
+		        </div>
+		    `;
+		}
+/*		if (section === "login") {
+			contenido.innerHTML = //login
+		} else if (section === "register") {
+
+		} else if (section === "dash") {
+
+		} else {
+			"404: Page Not Exist"
+		}*/
+	</script>
+</body>
+</html>
