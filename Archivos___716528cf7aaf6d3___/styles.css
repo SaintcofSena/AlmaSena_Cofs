@@ -6,15 +6,35 @@
 /* FIN GLOBAL */
 
 /* CONTENEDOR */
-.container {
-	margin: 0 auto;
-	width: 66%; /* (4/6)*100 */
-	height: 50%; /* (2/4)*100 */
+body {
+	margin: 0;
+	padding: 0;
+}
+section {
+	width: 100%;
+	height: auto;
+
+/** CENTRAR CONTENIDO, TEXTO**/
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; 
+/** FIN CENTRAR **/
+}
+.container {
+	width: 600px; /* (4/6)*100 */
+	height: 400px; /* (2/4)*100 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 /* FIN CONTENEDOR */
 
 /* CABECERA */
+.header {
+	width: 100%;
+}
 /* FIN CABECERA */
 
 /* COMPONENTE */
