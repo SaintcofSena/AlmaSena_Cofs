@@ -1,8 +1,9 @@
 /* ROOT */
 :root {
-	--color-fondo: #106CCF;
-	--color-contenedor: #F2F2F2;
-	--color-
+	--color-fondo: #106CCF; /*Color Secundario*/
+	--color-contenedor: #F2F2F2; /*Color Primario*/
+	--color-titulo: #0D0D0D; /* Color Complementario-Neutro */
+	--color-buscador: #BFBFBF; /* Color Complementario */
 }
 /* FIN ROOT */
 
@@ -47,6 +48,7 @@ section {
 	align-items: center;
 	padding: 5px;
 }
+
 /* FIN CABECERA */
 
 /* COMPONENTE */
