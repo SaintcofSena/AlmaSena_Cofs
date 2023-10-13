@@ -11,3 +11,4 @@ En este repositorio se hayan los Documentos mas recientes a la fecha, especifica
 Este repositorio es un lugar donde se almacenaran los documentos y trabajos, segun se realicen activadades o en su defecto se realicen mejoras en el repositorio original.
 
 ### EN ESTE LUGAR SE ENCUENTRAN LOS ARCHIVOS TRABAJADOS EN EL 4To TRIMESTRE.
+[131023 - Mi Galeria: Grid.](https://github.com/SaintcofSena/AlmaSena_Cofs/tree/main/Archivos___716528cf7aaf6d3___ "131023 - Mi Galeria: Grid.")
