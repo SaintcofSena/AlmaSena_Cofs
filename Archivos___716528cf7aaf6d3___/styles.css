@@ -11,7 +11,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap");
 
 *{
- border: 1px solid red
+ border: 1px solid red;
+ font-family: 'Montserrat', sans-serif;
 }
 /* FIN GLOBAL */
 
@@ -62,9 +63,27 @@ section {
 	grid-auto-rows: minmax(200px, auto);
 	/*Añade un espacio de 10px ente las filas y columnas*/
 	gap: 10px;
-	/****************************************************/
+	/* ************************************************ */
 }
 /** COMPONENTE **/
+.gallery .item > a {
+	display: inline-block;
+	position: relative; /* Permite posicionar h3 absolute */
+}
+.gallery .item > a:hover{
+display: block;
+}
+a > img {
+	width: 100%;
+}
+a > img:hover {
+	opacity: 1;
+}
+a > img + h3 {
+	display: none;
+	position: absolute;
+	bottom: 50px;
+}
 
 /** FIN COMPONENTE **/
 /* FIN CONTENIDO */
