@@ -24,12 +24,12 @@ section {
 	width: 100%;
 	height: auto;
 
-/** CENTRAR CONTENIDO, TEXTO**/
+	/* CENTRAR CONTENIDO, TEXTO */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center; 
-/** FIN CENTRAR **/
+	/* FIN CENTRAR */
 }
 .container {
 	width: 600px; /* (4/6)*100 */
@@ -44,12 +44,27 @@ section {
 	width: 100%;
 	margin-bottom: 5px;
 	display: inline-flex;
-	justify-content: space-between;
+	justify-content: space-between; /*contendio horizontal lado a lado*/
 	align-items: center;
 	padding: 5px;
 }
-
 /* FIN CABECERA */
 
-/* COMPONENTE */
-/* FIN COMPONENTE */
+/* CONTENIDO */
+.gallery {
+	width: 100%;
+	display: grid;
+
+	/*Indica que quiere 3 columnas cada una con 1 fracion del contenedo (1/3)
+	  y se utiliza la funcion repeat para repetir lo anterior en cada fila*/
+	grid-template-columns: repeat(3, 1fr);
+	/*Indica que el tamaño de la fila es automatico siempre y cuando el alto minimo sea 200px*/
+	grid-auto-rows: minmax(200px, auto);
+	/*Añade un espacio de 10px ente las filas y columnas*/
+	gap: 10px;
+	/****************************************************/
+}
+/** COMPONENTE **/
+
+/** FIN COMPONENTE **/
+/* FIN CONTENIDO */
