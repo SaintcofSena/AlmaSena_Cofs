@@ -4,6 +4,7 @@
 	--color-contenedor: #F2F2F2; /*Color Primario*/
 	--color-titulo: #0D0D0D; /* Color Complementario-Neutro */
 	--color-buscador: #BFBFBF; /* Color Complementario */
+	--color-figcaption: rgba(0, 0, 0, 0.2);/* Color Complementario con opacidad */
 }
 /* FIN ROOT */
 
@@ -11,19 +12,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap");
 
 *{
- border: 1px solid red;
+ /*border: 1px solid red;*/
  font-family: 'Montserrat', sans-serif;
 }
 /* FIN GLOBAL */
 
 /* CONTENEDOR */
 body {
+	width: 100vw;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
+	background-color:var(--color-fondo);
+	justify-content: center;
 }
 section {
-	width: 100%;
-	height: auto;
+	width: 100vw;
+	height: 150vh;
 
 	/* CENTRAR CONTENIDO, TEXTO */
 	display: flex;
@@ -35,8 +40,11 @@ section {
 .container {
 	width: 66.66%; /* (4/6)*100 */
 	height: 50%; /* (2/4)*100 */
+	background-color: var(--color-contenedor);
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
+	border-radius: 15px;
 }
 /* FIN CONTENEDOR */
 
@@ -48,12 +56,33 @@ section {
 	justify-content: space-between; /*contendio horizontal lado a lado*/
 	align-items: center;
 }
+.logo {
+	padding: 5px;
+	font-size: 1em;
+}
+form {
+	display: flex;
+	align-items: center;
+	margin-right: 5px;
+}
+ion-icon {
+	display: none;
+}
+input{
+	display: block;
+	border: 0;
+	border-bottom: 1px solid var(--color-buscador);
+	background-color: var(--color-contenedor);
+	outline: none;
+}
 /* FIN CABECERA */
 
 /* CONTENIDO */
 .gallery {
 	width: 100%;
 	display: grid;
+	background-color: var(--color-contenedor);
+
 
 	/*Indica que quiere 3 columnas cada una con 1 fracion del contenedo (1/3)
 	  y se utiliza la funcion repeat para repetir lo anterior en cada fila*/
@@ -74,14 +103,18 @@ section {
 	margin: auto;
 	position: relative;
 }
+a:hover {
+	box-shadow: -1px -1px 10px 0 var(--color-figcaption);
+	shado
+	border-radius: 5px;
+}
 a > img {
 	width: 100%;
 	height: 100%;
+	border-radius: 5px;
 }
 a > img + h3 {
 	display: none;
-	padding: 3px;
-
 }
 a:hover > img + h3 {
 	display: block;
@@ -94,14 +127,39 @@ a:hover > img + h3 {
 	right: 0;
 	margin: 0;
 
-	background-color: var(--color-buscador);
+	background-color: var(--color-figcaption);
 	color: var(--color-contenedor);
-	opacity: .5;
+
+	padding: 10px;
+	font-size: 1ex;
+	text-align: justify;
 }
 /** FIN COMPONENTE **/
 /* FIN CONTENIDO */
 
+@media (max-width: 600px) {
+	form {
+		padding: 10px;
+	}
+	input {
+		display: none;
+	}
+	ion-icon {
+	display: block;
+	}
 
+
+
+
+
+
+/*	form:hover {
+		display: none;
+	}
+	form:hover input {
+		display: block;
+	}
+}*/
 
 
 
