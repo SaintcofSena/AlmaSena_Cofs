@@ -1,6 +1,7 @@
 :root{
 	--color-title: #36c;
 	--color-span: #54595d;
+	--color-icon: #fff;
 }
 * {
 	border: 1px solid red;
@@ -82,6 +83,30 @@ span {
 }
 .logo-wikipedia-mundo {
 	inline-size: 100%;
+}
+.page-search{
+	border: 1px solid var(--color-span);
+}
+input#search{
+	outline: none;
+	border: none;
+}
+select{
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+select:focus {
+	border: 1px solid var(--color-title);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+button.button-search-outline {
+	background-color: var(--color-title);
+}
+ion-icon.search-outline {
+	color: var(--color-icon);
 }
 
 /*.col-l {
