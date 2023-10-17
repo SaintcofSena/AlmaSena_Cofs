@@ -1,0 +1,52 @@
+/*/*/*/* GLOBAL */
+* {
+	border: 1px solid red;
+}
+/* FIN GLOBAL */
+
+/* CONTENEDOR */
+body {
+	margin: 0;
+	padding: 0;
+}
+main {
+	flex-direction: column;
+}
+section {
+	width: 100%;
+}
+.page-title {
+	display:
+}
+/* FIN CONTENEDOR */
+
+/* GRID */
+.row-base {
+	display: grid;
+	width: 100%;
+	height: 50px;
+/*	grid-template-areas: 
+	"col-a col-a col-b col-b      "
+	"col-c   col-logo  col-d      "
+	"col-e col-logo col-logo col-f"
+	"col-c   col-logo  col-d      "
+	"col-a col-a col-b col-b      ";*/
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: minmax(100px, 1fr);
+	grid-gap: 10px;
+}
+.col-a{
+	grid-column: 1/6;
+	grid-row: 1;
+}
+.col-b{
+	grid-column: 7/12;
+	grid-row: 1;
+}
+.col-c{
+	grid-column: ;
+}
+.logo-wikipedia-mundo {
+	grid-column: ;
+}
+/* FIN GRID */*/*/*/

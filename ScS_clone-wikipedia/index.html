@@ -4,87 +4,100 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=
 	, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
 	<title>ScS - Clon Wikipedia</title>
 </head>
 <body>
-	<h1>Wikipedia</h1>
-	<p>The Free Encyclopedia</p>
-	<img src="#" alt="Logo wikipedia">
-
-	<a href="#">
-		<h2>Español</h2>
-		<span>1 892 000+ articulos</span>
-	</a>
-	<a href="#">
-		<h2>English</h2>
-		<span>6 715 000+ articles</span>
-	</a>
-	<a href="#">
-		<h2>日本語</h2>
-		<span>1 387 000+ 記事</span>
-	</a>
-	<a href="#">
-		<h2>Русский</h2>
-		<span>1 938 000+ статей</span>
-	</a>
-	<a href="#">
-		<h2>Deutsch</h2>
-		<span>2 836 000+ Artikel</span>
-	</a>
-	<a href="#">
-		<h2>Français</h2>
-		<span>2 553 000+ articles</span>
-	</a>
-	<a href="#">
-		<h2>Italiano</h2>
-		<span>1 826 000+ voci</span>
-	</a>
-	<a href="#">
-		<h2>中文</h2>
-		<span>1 377 000+ 条目 / 條目</span>
-	</a>
-	<a href="#">
-		<h2>Português</h2>
-		<span>1 109 000+ artigos</span>
-	</a>
-	<a href="#">
-		<h2>العربية</h2>
-		<span>1 217 000+ مقالة</span>
-	</a>
-	<a href="#">
-		<h2>Español</h2>
-		<span>1 892 000+ articulos</span>
-	</a>
-
-	<form action="post">
-		<input type="text" name="search" id="seacrh">
-		<input type="search" name="search" id="search">
-
-		<select> <!-- SEgun la iso 639-1-->
-			<option>ES</option>
-			<option>EN</option>
-			<option>AF</option>
-			<option>AR</option>
-			<option>ZH</option>
-			<option>DE</option>
-			<option>JA</option>
-			<option>KO</option>
-			<option>LA</option>
-			<option>RU</option>
-		</select>
-
-		<button><ion-icon name="search-outline"></ion-icon></button>
-	</form>
-
-	<div class="#">
-		<button class="language-button">Read Wikipedia in your language</button>
-		<section class="language-list">
-			<article class="language-list-amount-articles"></article>
-			<article class="language-list-amount-articles"></article>
-			<article class="language-list-amount-articles"></article>
-			<a href="" class="language-list-other">Other languages</a>
+	<main class="container">
+		<section class="page-title" id="">
+			<img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="Logo de wikipedia" class="icono-wikipedia-mundo" width="50px" height="50px">
+			<div class="" id="">
+				<h1>Wikipedia</h1>
+				<p>The Free Encyclopedia</p>
+			</div>
 		</section>
-	</div>
+		<section class="page-center row-base" id="">
+			<a href="#" class="col-es">
+				<h2>Español</h2>
+				<span>1 892 000+ articulos</span>
+			</a>
+			<a href="#" class="col-en">
+				<h2>English</h2>
+				<span>6 715 000+ articles</span>
+			</a>
+			<a href="#" class="col-zh">
+				<h2>日本語</h2>
+				<span>1 387 000+ 記事</span>
+			</a>
+			<a href="" class="col-logo">
+				<img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="Logo de wikipedia" class="logo-wikipedia-mundo">
+			</a>
+<!-- 			<a href="#" class="col-l">
+				<img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="Logo de wikipedia" class="logo-wikipedia-mundo">
+			</a> -->
+			<a href="#" class="col-py">
+				<h2>Русский</h2>
+				<span>1 938 000+ статей</span>
+			</a>
+			<a href="#" class="col-de">
+				<h2>Deutsch</h2>
+				<span>2 836 000+ Artikel</span>
+			</a>
+			<a href="#" class="col-fr">
+				<h2>Français</h2>
+				<span>2 553 000+ articles</span>
+			</a>
+			<a href="#" class="col-it">
+				<h2>Italiano</h2>
+				<span>1 826 000+ voci</span>
+			</a>
+			<a href="#" class="col-ja">
+				<h2>中文</h2>
+				<span>1 377 000+ 条目 / 條目</span>
+			</a>
+			<a href="#" class="col-po">
+				<h2>Português</h2>
+				<span>1 109 000+ artigos</span>
+			</a>
+			<a href="#" class="col-ar">
+				<h2>العربية</h2>
+				<span>1 217 000+ مقالة</span>
+			</a>
+		</section>
+		<section class="page-search" id="">
+			<form action="post">
+				<input type="text" name="search" id="seacrh">
+				<input type="search" name="search" id="search">
+
+				<select> <!-- SEgun la iso 639-1-->
+					<option>ES</option>
+					<option>EN</option>
+					<option>AF</option>
+					<option>AR</option>
+					<option>ZH</option>
+					<option>DE</option>
+					<option>JA</option>
+					<option>KO</option>
+					<option>LA</option>
+					<option>RU</option>
+				</select>
+
+				<button><ion-icon name="search-outline"></ion-icon></button>
+			</form>
+		</section>
+		<section class="page-main-language" id="">
+			<div class="language-container">
+				<button class="language-button">Read Wikipedia in your language</button>
+				<section class="language-list">
+					<article class="language-list-amount-articles"></article>
+					<article class="language-list-amount-articles"></article>
+					<article class="language-list-amount-articles"></article>
+					<a href="" class="language-list-other">Other languages</a>
+				</section>
+			</div>
+		</section>
+	</main>
 
 	<!-- ION-ICON -->
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
