@@ -1,0 +1,15 @@
+div {
+	width: 121px;
+	height: 181px;
+	position: relative;
+	top: 100px;
+	left: 300px;
+	background: #FF9988;
+
+	transition: all 5s;
+}
+/*comentario*/
+div:hover {
+	transform: rotate(90deg) scale(5);
+	background: skyblue;
+}

@@ -1,0 +1,127 @@
+<!-- NOTA: El codgio esta roto
+			1. se clikea enter en vez de añadir otra etiqueta p
+			2. varios div contenedores se cierran en la misma linea(estan vacios)
+			3. el iframe con la ubicacion del sena no funciona
+			4. Cambiar esos div por segmantica
+			5. me faltaron tildes
+			6. se presentan varias etiquetas innesesarias o que cierran algo que nunca fue abierto
+			7. 4:50 - ScS-101023 -->
+			
+<!DOCTYPE html> <!-- Indica al DOM que es de tipo html-->
+<html lang="en"> <!-- Establece el lenguaje del contenido en ingles-->
+<head> <!-- abre la etiqueta head que almacena la informacion de la pagina-->
+	<meta charset="UTF-8"> <!-- establece la distribucion del teclado [Ñ]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Indica que la pagina se debe mostrar al tamaño real del dispositivo-->
+	<title>ScS JQUERY</title> <!-- -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/> <!-- Añade el titulo a la pagina-->
+
+	<script type="text/javascript" src="js/jqery-1.7.1"></script> <!-- -->
+	<script type="text/javascript" src="js/script.js"></script> <!-- -->
+</head> <!-- cierra etiqueta head-->
+<body> <!-- abre etiqueta body que contiene el contenido de la papgina-->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.609862003973!2d-75.68382868523719!3d4.8368599964876955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3880c48bbcdd03%3A0x337ff537a4f4fd91!2sSena!5e0!3m2!1ses!2sco!4v1507159032556" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> <!-- -->
+	<input type="file"> <!-- -->
+	<div id="container"> <!-- -->
+		<div id="menu"> <!-- -->
+			<ul>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#trabajo">Trabajo</a></li>
+				<li><a href="#inicio" class="logo">&nbsp;</a></li>
+				<li><a href="#contacto">CONTACTO</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+		</div><!--menu-->
+	</div>
+
+<div id="inicio">
+	<div id="slider">
+		<div id="containerSlider">
+		</div><!--containerSlider-->
+	</div><!--slider-->
+</div><!--#inicio-->
+
+<div id="servicio">	
+	<h2>SERVICIOS</h2>
+	<div id="contenido">
+		<p>jQuery es una biblioteca creada con JavaScript que permite smplificar el desarrollode animaciones e interacciones con
+		HTML, facilitando el acceso a la estructura interna de un documento. Se basa en la manipulacion del DOM y en el manejo
+		de eventos asociados a los elementos que contiene la misma.
+		Con este manual aprendera a trabajar con una biblioteca que:
+		Es sofeare libre y, como tal, goza de una gran difusion y popularidad en la comunidad de desarrolladores de paginas web.
+		Permite el uso de widgets como el acordeon, gestion de dinamismo a las paginas web de forma sencilla.
+		Es compatible con la inmensa mayoria de los navegadores(esa es parte de potencia).
+		Incorpora un gran n°mero de mUtodos para trabajar con AJAX.</p>
+	</div><!--contenido-->
+	<div id="acordeonServicios">
+	</div><!--acordeonServicios-->
+</div><!--servicios-->
+
+<div id="trabajo"></div><!--trabajo-->
+<h2>Trabajo</h2>
+	<div class="contenido">
+		<p>Los mas interesantes de la nueva API son:
+		Geolocalizacion HTML
+		Drag and Drop HTML
+		HTML almacenamiento local
+		Cache aplicacion HTML
+		Trabajadores Web HTML
+		HTML SSE	</p>
+	</div><!--contenido-->
+
+	<div id="slideshow">
+		<img src=""alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+		<img src="" alt="">
+	</div><!--slideshow-->
+</div><!--trabajo-->
+
+<div id="faq"></div><!--faq-->
+	<h2>FAQ</h2>
+	<div class="contenido">
+		<p>Fuentes CSS
+		El CSS de color propiedad define el color del texto para ser utilizado para el elemento HTML.
+	
+		El CSS font-family propiedad define el tipo de letra que se utilizara para el elemento HTML. El CSS font-size propiedad define el tamaño del texto que se utilizará para el elemento HTML.
+		</p> 
+		<div id="acordeonFaq">
+		</div><!--acordeonFaq-->
+	</div><!--contenido--> 
+</div><!--faq-->
+
+<div id="contacto"></div><!--contacto--> 
+		<h2>Contacto</h2>
+
+		<div class="contenido">
+
+		<p>El atributo alt
+
+		El atributo alt especifica un texto alternativo para una imagen, si la imagen no se puede visualizar.
+
+		El atributo alt proporciona información alternativa para una imagen, si un usuario por alguna razón no puede verla ( debido a la conexión lenta, un error en el atributo src, o si el usuario utiliza un lector de pantalla).</p> 
+		</div><!--contenido-->
+
+		<div id="formulario"> 
+		<form action="">
+			<label>Nombre:</label><br />
+			<input type="text" class="campo" id="tfNombre"><br />
+			<label>Correo Electr&oacute;nico:</label><br /> 
+			<input type="text" class="campo" id="tfCorreo"><br />
+			<label>Asunto:</label><br />
+			<input type="text" class="campo" id="tfAsunto"><br />
+			<label>Mensaje:</label><br />
+			<textarea id="tfMensaje" cols="30" rows="10"></textarea><br /> 
+			<input type="submit" value="Enviar formulario!" class="boton" >
+		</form>
+	</div><!--formulario-->
+</div><!--contacto-->
+
+<div id="footer">
+Derechos reservados 2016. Politica de privacidad.
+</div><!--footer-->
+</div><!--container-->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12! 1m311d3975.60986200397312d-75.6838286852371913d4.836859996487
+695512m3!1f0!2f0!3f0!3m2!11102421768!4f13.1!3m3!1m2!1s0x8e3880c48bbc dd03%3A0x337ff537a4f4fd91!2sSena!5e0!3m2!1ses!2sco!4v1507159032556" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</body>
+</html>

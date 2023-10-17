@@ -1,0 +1,169 @@
+* { /*Indica que todos los elementos del html tengan la fuente Arial*/
+	font-family: arial; 
+} 
+body{ /*indica que el cuerpo de del html debe tener un tono azul oscruo y establece el relleno y la mergen en 0*/
+	background-color: #246074; 
+	padding: 0;
+	margin: 0; 
+}
+/*NUEVO*/
+#container{ /*Este linea indica que el contenedor container con una margen superior de 105 pixeles y los lados derecho o izquiero automatico y que debe tener un ancho de 850px*/
+	margin: 105px auto; 
+	width: 850px;
+}
+
+/*NUEVO: Fixed: deja anclado el menu superior*/ 
+#menu{ /*Establece el fondo del elemento id=menu en blanco le da un ancho de 850px, le agrega sobra y lo centra*/
+	background-color: #fff; 
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 850px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+#menu ul {  /*Establece las margenes d ela lista desordenada dentro del id menu en 0 al igual que el relleno*/
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul li{ /*acomoda los elementos de la lista en linea, le quita los punticos y se le añade margen y relleno*/
+	List-style: none;
+	display: inline-block;
+	padding: 40px 10px; 
+	margin-left: -25px;
+}
+
+#menu ul li a{  /*indica que la letra de los enlaces debe ser blanca, el tamaño de la fuente lo posisciona en 14px, le coloca un resaltado oscruo y añade relleno interno de 40px*/
+	color: #000;
+	text-decoration: none;
+	font-size: 14px; 
+	font-weight: bold; 
+	padding: 40px 10px; 
+	text-decoration: none;
+}
+
+#menu ul li a:hover{ /*Estalece el fondo y color de texto al posicionarse sobre el elemento*/
+	background-color: #ff5105;
+	color: #fff;
+}
+
+.logo, logo:hover{ /*Establece color de fondo, que no se repita este centrado y su apariencia al colocar el mouse*/
+	background: #ff5105 url(../img/logo.png); 
+	background-repeat: no-repeat;
+	background-position: center center; 
+	padding-left: 71px !important; 
+	padding-right: 71px !important; 
+}
+
+/*NUEVO*/ 
+.logo2{ /*establece el fondo y la apariencia de la imagen de la clase "logo2".*/
+	background: #ff5105 url(../img/logo_2.png);
+	background-repeat: no-repeat;
+	background-position: center center; 
+	padding-left: 71px !important; 
+	padding-right: 71px !important;
+}
+
+#slider{ /*Establece el fondo del slider y le agrega una sombra con compatibilidad para mozila opera y safari*/
+	background: url(../img/html.jpg) ;
+	height: 450px;
+	margin-top: 10px;
+	width: 100%;
+	/*************/
+
+	-webkit -box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	-moz -box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	-o -box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+}
+
+h2 { /*Establece los titulos de 2do nivel con un tono azul claro, le añade margen superior e inferior y añade sombra*/ 
+	color: #A3E0FF;
+	font font-size: 28px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+
+	-webkit -box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	-moz -box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	-o -box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+}
+.contenido{ /*Establece el fondo del elemento contenido en blacno y agrega sombra*/
+	background-color: #FFF;
+
+	-webkit -box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	-moz -box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	-o -box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.contenido p{ /*Establece el tamaña y relleno del parrafo dentro de contenido*/
+	font-size: 14px;
+	padding: 40px;
+}
+
+▼ #formulario{ /*Establece el fondo del fomulario en gris claro, con una margen superior, relleno y sombra ademas configura el tamaño y ancho de a fuente*/
+background-color: #d2d2d2;
+margin-top: -20px; padding: 40px;
+-webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.5); 
+-moz-box-shadow: inset 0 1px 5px rgba(0,0,0,0.5); 
+-o -box-shadow: inset 0 1px 5px rgba(0,0,0,0.5); 
+box-shadow: inset 0 1px 5px rgba(0,0,0,0.5);
+font-size: 14px; margin: 0 auto;
+width: 400px;
+}
+
+#formulario form{ /*Establece el tamaño y ancho dentro del fomrulario*/
+	font-size: 14px;
+	margin: 0 auto;
+	width: 400px;
+}
+textarea{ /* establece el tamaño del textarea(cuadrito) en 100px x 400px */
+	height: 100px;
+	width: 400px;
+}
+
+.campo{ /*le agrega a los input bordes, redondeados un fondo gris /
+	background: #eee;
+	border: 0;
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	padding: 10px; 
+	width: 400px;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px;
+}
+
+.campo:focus, textarea:focus{ /*Establece el c olor de fondo de los text area y los input(campo) cuando estan enfocados, añade sombra y quita contorno*/
+	background: #fff; 
+	outline: none;
+
+	-webkit-box-shadow: 0 0 10px #24607f; 
+	-moz-box-shadow: 0 0 10px #24607f;
+	-o -box-shadow: 0 0 10px #24607f;
+	box-shadow: 0 0 10px #24607f;
+} 
+
+.boton{ /*Establece las propiedades del boton como su letra negra y su fondo naraja, ademas de su tamaño*/
+	background: #ff8a00; 
+	border: 0;
+	color: #fff;
+	margin-left: 125px;
+	padding: 10px;
+	width: 150px:
+	border-radius: 3px;
+} 
+.boton:hover{ /*Indica el cambio del color de fondo al posicionarse encima del boton*/
+	background color: #ff5105;
+}
+
+#footer{ /*Establece el color del pie de pagina, lo centra y le coloca un sombreado oscuro al texto*/
+	color: #fff;
+	font-size: 12px;
+	font-weight: bolder;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
